@@ -47,5 +47,36 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>repsy</id>
+            <name>docker-jenkins-snapshot</name>
+            <url>https://repo.repsy.io/mvn/rzucareli/docker-jenkins-snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>repsy</id>
+            <name>docker-jenkins-snapshot</name>
+            <url>https://repo.repsy.io/mvn/rzucareli/docker-jenkins-snapshot</url>
+        </repository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>repsy-snapshot</id>
+            <name>docker-jenkins-snapshot</name>
+            <url>https://repo.repsy.io/mvn/rzucareli/docker-jenkins-snapshot</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>repsy-release</id>
+            <name>docker-jenkins-release</name>
+            <url>https://repo.repsy.io/mvn/rzucareli/docker-jenkins-snapshot</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
+    </repositories>
 
 </project>
