@@ -93,6 +93,8 @@
                 <version>3.0.1</version>
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <suppressCommitBeforeTag>true</suppressCommitBeforeTag>
+                    <remoteTagging>false</remoteTagging>
                 </configuration>
             </plugin>
         </plugins>
