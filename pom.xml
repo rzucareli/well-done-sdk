@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zucareli</groupId>
@@ -63,7 +64,9 @@
             <id>repsy-snapshot</id>
             <name>docker-jenkins-snapshot</name>
             <url>https://repo.repsy.io/mvn/rzucareli/docker-jenkins-snapshot</url>
-            <releases><enabled>false</enabled></releases>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -73,17 +76,20 @@
             <id>repsy-release</id>
             <name>docker-jenkins-release</name>
             <url>https://repo.repsy.io/mvn/rzucareli/docker-jenkins-snapshot</url>
-            <releases><enabled>true</enabled></releases>
-            <snapshots><enabled>false</enabled></snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
     <scm>
-       <connection>scm:git:git@github.com:rzucareli/well-done-sdk.git</connection>
-       <url>scm:git:git@github.com:rzucareli/well-done-sdk.git</url>
-       <developerConnection>scm:git:git@github.com:rzucareli/well-done-sdk.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <connection>scm:git:git@github.com:rzucareli/well-done-sdk.git</connection>
+        <url>scm:git:git@github.com:rzucareli/well-done-sdk.git</url>
+        <developerConnection>scm:git:git@github.com:rzucareli/well-done-sdk.git</developerConnection>
+    </scm>
 
     <build>
         <plugins>
