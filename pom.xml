@@ -47,6 +47,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <distributionManagement>
         <snapshotRepository>
             <id>repsy</id>
@@ -78,5 +79,24 @@
             <snapshots><enabled>false</enabled></snapshots>
         </repository>
     </repositories>
+
+    <scm>
+       <connection>scm:git:git@github.com:rzucareli/well-done-sdk.git</connection>
+       <url>scm:git:git@github.com:rzucareli/well-done-sdk.git</url>
+       <developerConnection>scm:git:git@github.com:rzucareli/well-done-sdk.git</developerConnection>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
